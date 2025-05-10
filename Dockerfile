@@ -6,6 +6,8 @@ USER root
 # 2) Install MyST Parser, MyST-NB & Jupytext (with the 'myst' extra)
 RUN pip install mystmd
 
+RUN pip install jupyterlab_myst
+
 # 3) Switch back to the manimuser that the base image expects
 USER manimuser:manimuser
 
