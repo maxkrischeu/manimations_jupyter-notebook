@@ -8,6 +8,8 @@ RUN pip install mystmd
 
 RUN pip install jupyterlab_myst
 
+RUN pip install ipywidgets
+
 # 3) Switch back to the manimuser that the base image expects
 USER manimuser:manimuser
 
